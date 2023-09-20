@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav>
+        <span class="logo">Abhay Lonkar</span>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#about" onclick="menutoggle()">About</a></li>
+                <li><a href="#skill" onclick="menutoggle()">Skills</a></li>
+                <li><a href="#project" onclick="menutoggle()">Projects</a></li>
+                <li><a href="#contact" onclick="menutoggle()">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="toggle" onclick="menutoggle()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="container">
+            <div class="pic-container">
+                <img src="assets/Profile.png" alt="Abhay's profile pic"  class="profile1">
+            </div>
+            <div class="text-container">
+                <div class="text">
+                    <p class="p1">Hello I'm</p>
+                    <h1 class="title">Abhay Lonkar</h1>
+                    <p class="p2">Frontend Developer</p>
+                </div>
+                <div class="btn-container">
+                    <button type="button" onclick="window.open('assets/MyResume.pdf')">Download Resume</button>
+                    <button type="button" onclick="window.open('https://github.com/AbhayLonkar')">Visit Github</button>
+                </div>
+                <div class="icon-container">
+                    <a href="#contact"><img src="assets/email.png" alt="email png" class="icon"></a>
+                    <a href="https://github.com/AbhayLonkar" target="_blank"><img src="assets/github.png" alt="github png" class="icon"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="subtitle">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="container">
+            <div class="pic-container">
+                <img src="assets/Profile2.png" alt="Abhay's profile pic" class="profile2">
+            </div>
+            <div class="text-container">
+                <div class="about1">
+                    <div class="rounded">
+                        <img src="assets/experience.png" alt="experience png" class="icon2">
+                        <h2>Certificates</h2>
+                        <p class="subtitle">MSCIT & C PROGRAMMING</p>
+                    </div>
+                    <div class="rounded">
+                        <img src="assets/education.png" alt="education png" class="icon2">
+                        <h2>Education</h2>
+                        <p class="subtitle">BCA Bachelors Degree</p>
+                    </div>
+                </div>
+                <div class="about2">I'm Abhay Lonkar, a Developer enthusiast eager to learn and create.With a BCA Degree from RTMNU University.I'm passionate about Programming.I believe in problem solving and aspire to achieve a reputated position in IT Field.Lets connect and explore opportunities!
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <p class="subtitle">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skill-container">
+            <div class="container1">
+                <div class="skill-heading">
+                    <p class="p2">Web Development</p>
+                </div>
+                <div class="skill-row1">
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>HTML</h3>
+                            <p class="text-info">Experience</p>
+                        </div>
+                    </div>
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>CSS</h3>
+                            <p class="text-info">Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-row1">
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>JAVASCRIPT</h3>
+                            <p class="text-info">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>PHP</h3>
+                            <p class="text-info">Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-row1">
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>BOOTSTRAP</h3>
+                            <p class="text-info">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>SQL</h3>
+                            <p class="text-info">Basic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="skill-heading">
+                    <p class="p2">Programming Lang.</p>
+                </div>
+                <div class="skill-row1">
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>C Prog</h3>
+                            <p class="text-info">Experience</p>
+                        </div>
+                    </div>
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>C++</h3>
+                            <p class="text-info">Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-row1">
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>PYTHON</h3>
+                            <p class="text-info">Basic</p>
+                        </div>
+                    </div>
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>JAVA</h3>
+                            <p class="text-info">Basic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-row1">
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>BOOTSTRAP</h3>
+                            <p class="text-info">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-div">
+                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
+                        <div class="skill-info">
+                            <h3>SQL</h3>
+                            <p class="text-info">Basic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <p class="subtitle">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-container">
+            <div class="project project-sm">
+                <div class="image-container"><img src="assets/TicTacToe.png" alt="" class="project-img"></div>
+                <h2 class="project-txt">Tic-Tac-Toe Game</h2>
+                <div class="project-btn">
+                    <button onclick="window.open('https://github.com/AbhayLonkar/Tic-Tac-Toe')">Github</button>
+                    <button onclick="window.open('https://abhaylonkar.github.io/Tic-Tac-Toe/')">Live Demo</button>
+                </div>
+            </div>
+            <div class="project project-sm">
+                <div class="image-container"><img src="assets/SimpleCalculator.png" alt="" class="project-img"></div>
+                <h2 class="project-txt">Simple Calculator</h2>
+                <div class="project-btn">
+                    <button onclick="window.open('https://github.com/AbhayLonkar/SimpleCalculator')">Github</button>
+                    <button onclick="window.open('https://abhaylonkar.github.io/SimpleCalculator/')">Live Demo</button>
+                </div>
+            </div>
+            <div class="project project-sm2">
+                <div class="image-container"><img src="assets/clock.jpg" alt="" class="project-img circle"></div>
+                <h2 class="project-txt"> Live Analog Clock</h2>
+                <div class="project-btn">
+                    <button onclick="window.open('https://github.com/AbhayLonkar/AnalogWatch')">Github</button>
+                        <button onclick="window.open('https://abhaylonkar.github.io/AnalogWatch/')">Live Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="subtitle">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contacts">
+                <div class="contact1">
+                    <img src="assets/email.png" alt="email png" class="icon3">
+                    <p class="contact-txt">abhaylonkar9@gmail.com</p>
+                </div>
+                <div class="contact2">
+                    <img src="assets/freelancer.png" alt="freelancer png" class="icon3">
+                    <p class="contact-txt">FreeLancer</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </footer>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

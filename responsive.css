@@ -1,0 +1,309 @@
+@media only screen and (max-width: 930px) {
+
+    section {
+        /* height: fit-content; */
+    }
+
+    .navlinks ul li {
+        display: block;
+        height: 8vh;
+    }
+
+    .navlinks {
+        position: absolute;
+        top: -100vh;
+        right: 0;
+        margin: 0%;
+        background-color: white;
+        height: fit-content;
+        transition: all .5s linear;
+    }
+
+    .navlinks ul li a {
+        font-size: 1.3rem;
+    }
+
+    .toggle {
+        display: inline-block;
+        position: absolute;
+        right: 2%;
+        top: 30%;
+        width: 6vh;
+        height: 50%;
+    }
+
+    .toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: black;
+        margin: 13% auto;
+        transition: all 300ms ease;
+    }
+
+    .navlinks.open {
+        top: 10vh;
+    }
+
+    .toggle.open span:first-child {
+        transform: rotate(45deg) translate(10px, 5px);
+    }
+
+    .toggle.open span:last-child {
+        transform: rotate(-45deg) translate(6px, -1px);
+    }
+
+    .toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    /* PROFILE SECTION */
+
+    #profile {
+        height: fit-content;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .container .pic-container {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+    }
+
+    .pic-container .profile1 {
+        width: 50%;
+    }
+
+    .container .text-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .icon-container .icon {
+        width: 5%;
+    }
+
+    .btn-container {
+        height: 47px;
+    }
+
+    /* ABOUT */
+
+    #about {
+        height: max-content;
+    }
+
+    #about .container {
+        height: max-content;
+    }
+
+
+    .about1 {
+        height: 221px;
+        margin-top: 5%;
+    }
+
+    .profile2 {
+        height: auto;
+        width: 60%;
+    }
+
+    /* SKILLS */
+
+    #skill {
+        height: fit-content;
+    }
+
+    .skill-container .container1 {
+        height: 409px;
+        width: 46%;
+    }
+
+    .skill-container {
+        height: fit-content;
+    }
+
+    /* PROJECTS */
+
+    #project {
+        height: fit-content;
+        margin-top: 50px;
+    }
+
+    .project-container {
+        display: block;
+    }
+
+    .project-sm {
+        width: 40%;
+        margin: 23px 10px;
+    }
+
+    .project-sm2 {
+        margin: 0 45px;
+        text-align: center;
+        width: 80%;
+    }
+
+    /* CONTACT */
+
+    #contact {
+        margin-top: 50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 490px) {
+
+    #profile {
+        display: block;
+        height: 100vh;
+    }
+
+
+    .container {
+        height: fit-content;
+        width: 100%;
+        padding: 0;
+        height: 100%;
+        text-align: center;
+    }
+
+    .container .pic-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .container .pic-container .profile1 {
+        height: 90%;
+        width: auto;
+    }
+
+    .container .text-container {
+        height: 50%;
+        margin-top: 10px;
+    }
+
+    .text-container .text {
+        height: 33.33%;
+    }
+
+    .text-container .text .title {
+        font-size: 2rem;
+    }
+
+    .text-container .text .p2 {
+        font-size: 1.5rem;
+    }
+
+    .text-container .btn-container {
+        /* height: 23.33%; */
+        width: 100%;
+    }
+
+    .icon-container {
+        width: 100%;
+        height: 33.33%;
+    }
+
+    .icon-container .icon {
+        /* height: 10%; */
+        width: auto;
+    }
+
+    /* ABOUT */
+
+    .profile2 {
+        width: 92%;
+        height: auto;
+    }
+
+    .about1 {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .about1 .rounded {
+        width: 70%;
+    }
+
+    .about2 {
+        padding: 10px 5%;
+    }
+
+    /* SKILL */
+
+    #skill {
+        margin-top: 20%;
+        height: fit-content;
+    }
+
+
+    .skill-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-container .container1 {
+        width: 90%;
+        height: max-content;
+        padding-bottom: 5%;
+    }
+
+
+    .skill-div {
+        height: auto;
+        width: 100%;
+        padding: 5%;
+    }
+
+    /* PROJECTS */
+
+
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-sm {
+        width: 80%;
+        padding: 30px 20px;
+    }
+
+    .project-sm2 {
+        width: 80%;
+        padding: 30px 20px;
+    }
+
+    /* CONTACT */
+
+    .contact-txt {
+        font-size: 15px;
+    }
+
+    .contact-container .contacts {
+        width: 270px;
+        height: 120px;
+        flex-direction: column;
+        padding: 30px 10px
+    }
+
+    .icon3 {
+        width: 20%;
+        height: auto;
+    }
+
+    footer ul li{
+        display: block;
+    }
+
+    footer ul li a{
+        font-size: 1.2rem;
+    }
+
+}

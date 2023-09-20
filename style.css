@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, 'sans-serif';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+div {
+    overflow: hidden;
+}
+
+.title,.subtitle,.p1,.p2,.about2,p,h2,span.logo{
+    cursor: default;
+}
+
+nav {
+    height: 10vh;
+    position: relative;
+}
+
+nav .logo {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0px 10%;
+    line-height: 10vh;
+}
+
+.navlinks {
+    float: right;
+    margin-right: 10%;
+}
+
+.navlinks ul li {
+    display: inline-block;
+    line-height: 10vh;
+    padding: 0 10px;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.navlinks ul li a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-underline-offset: 10px;
+}
+
+.toggle {
+    display: none;
+}
+
+/* PROFILE */
+
+section {
+    height: 100vh;
+}
+
+#profile {
+    padding-top: 8vh;
+    height: 90vh;
+}
+
+.container {
+    /* background-color: gold; */
+    padding: 6% 10%;
+    height: 62%;
+    width: 80%;
+}
+
+.pic-container {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    float: left;
+    display: flex;
+    justify-content: right;
+}
+
+.pic-container .profile1 {
+    height: 100%;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    flex-direction: column;
+    /* background: red; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.text {
+    height: max-content;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.p1 {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.p2 {
+    color: gray;
+    font-size: 2rem;
+}
+
+.title {
+    color: black;
+    font-size: 3rem;
+    text-align: center
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(88, 87, 87);
+}
+
+.btn-container {
+    margin-top: 10px;
+    /* background-color: green; */
+    width: fit-content;
+    height: fit-content;
+}
+
+.btn-container button {
+    height: 45px;
+    width: 150px;
+    padding: 0 10px;
+    border-radius: 4rem;
+    background: white;
+    border: 2px solid rgb(53, 53, 53);
+    font-weight: 600;
+}
+
+.btn-container button:first-child {
+    color: rgb(53, 53, 53);
+}
+
+.btn-container button:last-child {
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-container button:hover {
+    cursor: pointer;
+}
+
+.btn-container button:first-child:hover {
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-container button:last-child:hover {
+    background-color: black;
+}
+
+.icon-container {
+    margin-top: 5px;
+    /* background-color: palevioletred; */
+    height: 33.33%;
+    width: 100%;
+}
+
+.icon {
+    height: 30%;
+}
+
+.icongit {
+    height: 27%;
+}
+
+/* ABOUT */
+
+.about1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    /* background: orange; */
+    width: 100%;
+    height: 60%;
+}
+
+#about .pic-container {
+    justify-content: center;
+}
+
+.about2 {
+    /* background: lavender; */
+    padding: 0 5%;
+    width: 90%;
+    height: 40%;
+    text-align: justify;
+    color: rgb(85, 85, 85);
+    font-weight: normal;
+}
+
+.about1 .rounded {
+    float: left;
+    height: 90%;
+    width: 35%;
+    padding: 0 5%;
+    border: 2px solid rgb(88, 87, 87);
+    border-radius: 4rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon2 {
+    width: 17%;
+}
+
+/* SKILLS */
+
+
+.skill-container {
+    height: max-content;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.skill-container .container1 {
+    text-align: center;
+    /* background-color: red; */
+    height: 400px;
+    width: 34%;
+    float: left;
+    border: 2px solid rgb(85, 85, 85);
+    border-radius: 3rem;
+}
+
+.container1 .skill-heading {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 45%;
+}
+
+.skill-row1 {
+    height: 25%;
+    width: 100%;
+}
+
+.skill-div {
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    width: 50%;
+    /* background-color: yellow; */
+    height: 100%;
+}
+
+.skill-div .img {
+    width: 30%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+
+.skill-info {
+    width: 70%;
+    text-align: left;
+}
+
+/* PROJECTS */
+
+.project-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 40px;
+}
+
+.project{
+    width: 20%;
+    /* height: 300px; */
+    height: max-content;
+    border: 2px solid gray;
+    border-radius: 4rem;
+    float: left;
+    padding: 3% 3%;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86%;
+    width: 100%;
+}
+
+.project-img{
+    width: 100%;
+}
+
+.circle{
+    border-radius: 4rem;
+}
+
+.project-btn {
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.project-btn button{
+    height: 45px;
+    width: 48%;
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 4rem;
+    background: white;
+}
+
+.project-btn button:hover{
+    background: rgb(53, 53, 53);
+    color: white;
+    cursor: pointer;
+}
+
+.project-txt{
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* CONTACTS */
+
+#contact{
+    height: max-content;
+}
+
+.contact-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.contact-container .contacts{
+    border: 2px solid gray;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: row;
+    width: 560px;
+    padding: 0 10px;
+    height: 110px;
+    gap: 1rem;
+}
+
+.contact1,.contact2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon3{
+    height: 50%;
+}
+
+.contact-txt{
+    font-size: 23px
+}
+
+footer{
+    text-align: center;
+    height: 15vh;
+}
+
+footer ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+footer ul li a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-underline-offset: 10px;
+}
