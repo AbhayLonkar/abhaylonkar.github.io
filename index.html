@@ -1,242 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Under Development</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .gradient-text {
+      background: linear-gradient(45deg, #4F46E5, #EC4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  </style>
 </head>
-<body>
-    <nav>
-        <span class="logo">Abhay Lonkar</span>
-        <div class="navlinks">
-            <ul>
-                <li><a href="#about" onclick="menutoggle()">About</a></li>
-                <li><a href="#skill" onclick="menutoggle()">Skills</a></li>
-                <li><a href="#project" onclick="menutoggle()">Projects</a></li>
-                <li><a href="#contact" onclick="menutoggle()">Contacts</a></li>
-            </ul>
-        </div>
-        <div class="toggle" onclick="menutoggle()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="container">
-            <div class="pic-container">
-                <img src="assets/Profile.png" alt="Abhay's profile pic"  class="profile1">
-            </div>
-            <div class="text-container">
-                <div class="text">
-                    <p class="p1">Hello I'm</p>
-                    <h1 class="title">Abhay Lonkar</h1>
-                    <p class="p2">Frontend Developer</p>
-                </div>
-                <div class="btn-container">
-                    <button type="button" onclick="window.open('assets/MyResume.pdf')">Download Resume</button>
-                    <button type="button" onclick="window.open('https://github.com/AbhayLonkar')">Visit Github</button>
-                </div>
-                <div class="icon-container">
-                    <a href="#contact"><img src="assets/email.png" alt="email png" class="icon"></a>
-                    <a href="https://github.com/AbhayLonkar" target="_blank"><img src="assets/github.png" alt="github png" class="icon"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="subtitle">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="container">
-            <div class="pic-container">
-                <img src="assets/Profile2.png" alt="Abhay's profile pic" class="profile2">
-            </div>
-            <div class="text-container">
-                <div class="about1">
-                    <div class="rounded">
-                        <img src="assets/experience.png" alt="experience png" class="icon2">
-                        <h2>Certificates</h2>
-                        <p class="subtitle">MSCIT & C PROGRAMMING</p>
-                    </div>
-                    <div class="rounded">
-                        <img src="assets/education.png" alt="education png" class="icon2">
-                        <h2>Education</h2>
-                        <p class="subtitle">BCA Bachelors Degree</p>
-                    </div>
-                </div>
-                <div class="about2">I'm Abhay Lonkar, a Developer enthusiast eager to learn and create.With a BCA Degree from RTMNU University.I'm passionate about Programming.I believe in problem solving and aspire to achieve a reputated position in IT Field.Lets connect and explore opportunities!
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="skill">
-        <p class="subtitle">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="skill-container">
-            <div class="container1">
-                <div class="skill-heading">
-                    <p class="p2">Web Development</p>
-                </div>
-                <div class="skill-row1">
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>HTML</h3>
-                            <p class="text-info">Experience</p>
-                        </div>
-                    </div>
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>CSS</h3>
-                            <p class="text-info">Experience</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-row1">
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>JAVASCRIPT</h3>
-                            <p class="text-info">Intermediate</p>
-                        </div>
-                    </div>
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>PHP</h3>
-                            <p class="text-info">Intermediate</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-row1">
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>BOOTSTRAP</h3>
-                            <p class="text-info">Intermediate</p>
-                        </div>
-                    </div>
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>SQL</h3>
-                            <p class="text-info">Basic</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container1">
-                <div class="skill-heading">
-                    <p class="p2">Programming Lang.</p>
-                </div>
-                <div class="skill-row1">
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>C Prog</h3>
-                            <p class="text-info">Experience</p>
-                        </div>
-                    </div>
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>C++</h3>
-                            <p class="text-info">Experience</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-row1">
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>PYTHON</h3>
-                            <p class="text-info">Basic</p>
-                        </div>
-                    </div>
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>JAVA</h3>
-                            <p class="text-info">Basic</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-row1">
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>ANDROID DEVELOPMENT</h3>
-                            <p class="text-info">Intermediate</p>
-                        </div>
-                    </div>
-                    <div class="skill-div">
-                        <div class="img"><img src="assets/checkmark.png" alt="checkmark png" class="skill-icon"></div>
-                        <div class="skill-info">
-                            <h3>SQL</h3>
-                            <p class="text-info">Basic</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="project">
-        <p class="subtitle">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="project-container">
-            <div class="project project-sm">
-                <div class="image-container"><img src="assets/TicTacToe.png" alt="" class="project-img"></div>
-                <h2 class="project-txt">Tic-Tac-Toe Game</h2>
-                <div class="project-btn">
-                    <button onclick="window.open('https://github.com/AbhayLonkar/Tic-Tac-Toe')">Github</button>
-                    <button onclick="window.open('https://abhaylonkar.github.io/Tic-Tac-Toe/')">Live Demo</button>
-                </div>
-            </div>
-            <div class="project project-sm">
-                <div class="image-container"><img src="assets/SimpleCalculator.png" alt="" class="project-img"></div>
-                <h2 class="project-txt">Simple Calculator</h2>
-                <div class="project-btn">
-                    <button onclick="window.open('https://github.com/AbhayLonkar/SimpleCalculator')">Github</button>
-                    <button onclick="window.open('https://abhaylonkar.github.io/SimpleCalculator/')">Live Demo</button>
-                </div>
-            </div>
-            <div class="project project-sm2">
-                <div class="image-container"><img src="assets/clock.jpg" alt="" class="project-img circle"></div>
-                <h2 class="project-txt"> Live Analog Clock</h2>
-                <div class="project-btn">
-                    <button onclick="window.open('https://github.com/AbhayLonkar/AnalogWatch')">Github</button>
-                        <button onclick="window.open('https://abhaylonkar.github.io/AnalogWatch/')">Live Demo</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <p class="subtitle">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-container">
-            <div class="contacts">
-                <div class="contact1">
-                    <img src="assets/email.png" alt="email png" class="icon3">
-                    <p class="contact-txt">abhaylonkar9@gmail.com</p>
-                </div>
-                <div class="contact2">
-                    <img src="assets/freelancer.png" alt="freelancer png" class="icon3">
-                    <p class="contact-txt">FreeLancer</p>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <ul>
-                <li><a href="#profile">Home</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-        </footer>
-    </section>
+
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+  <div class="text-center">
+    <h1 class="text-5xl md:text-7xl font-bold gradient-text mb-10 py-2">Portfolio is under development</h1>
+    <p class="text-xl md:text-2xl text-gray-300 mb-8">Something awesome is being built! 🚀</p>
+    <div class="relative mb-12">
+      <svg class="w-32 h-32 md:w-48 md:h-48 mx-auto float" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path class="text-indigo-500" stroke-linecap="round" stroke-linejoin="round"
+          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+      </svg>
+    </div>
+    <div class="flex justify-center space-x-4">
+      <a href="https://github.com/abhaylonkar" target="_blank"
+        class="text-gray-400 hover:text-indigo-500 transition-colors">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.698-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.647.349-1.087.636-1.338-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.446-1.27.098-2.646 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.376.203 2.393.1 2.646.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.577.688.479C19.137 20.164 22 16.42 22 12c0-5.523-4.477-10-10-10z">
+          </path>
+        </svg>
+      </a>
+      <a href="https://linkedin.com/in/abhaylonkar" target="_blank"
+        class="text-gray-400 hover:text-indigo-500 transition-colors">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-9.5 5.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM7 10v7h3.5v-7H7zm6.5 0v7H17v-3.5a3.5 3.5 0 00-7 0V17h3.5v-7h-3.5z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <p class="mt-8 text-gray-500">Stay tuned for updates!</p>
+  </div>
 </body>
-<script src="script.js"></script>
+
 </html>
